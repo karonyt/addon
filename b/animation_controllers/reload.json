@@ -1,0 +1,105 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.reload": {
+      "states": {
+        "default": {
+          "transitions": [
+            { "tomato": "(q.get_equipped_item_name == 'tomato') && q.is_sneaking && v.attack_time"},
+            { "hekart": "(q.get_equipped_item_name == 'hekart') && q.is_sneaking && v.attack_time"},
+            { "pchan": "(q.get_equipped_item_name == 'pchan') && q.is_sneaking && v.attack_time"},
+            { "zyuukenn": "(q.get_equipped_item_name == 'zyuukenn') && q.is_sneaking && v.attack_time"},
+            { "handk": "(q.get_equipped_item_name == 'handk') && q.is_sneaking && v.attack_time"},
+            { "m500": "(q.get_equipped_item_name == 'm500') && q.is_sneaking && v.attack_time"},
+            { "scar": "(q.get_equipped_item_name == 'scar') && q.is_sneaking && v.attack_time"},
+            { "minimi": "(q.get_equipped_item_name == 'minimi') && q.is_sneaking && v.attack_time"},
+            { "m870": "(q.get_equipped_item_name == 'm870') && q.is_sneaking && v.attack_time"},
+            { "foton": "(q.get_equipped_item_name == 'foton') && q.is_sneaking && v.attack_time"},
+            { "rpg": "(q.get_equipped_item_name == 'rpg') && q.is_sneaking && v.attack_time"},
+            { "ssg": "(q.get_equipped_item_name == 'ssg') && q.is_sneaking && v.attack_time"},
+            { "havoc": "(query.get_equipped_item_name == 'havoc_magazine') && (query.is_using_item)" },
+            { "lstar": "(query.get_equipped_item_name == 'lstar_magazine') && (query.is_using_item)" }
+          ]
+        },
+        "pchan": {
+          "on_entry": [            
+            "/execute @s[scores={pchan=..49}] ~~~ function reload.pchan"
+          ],
+          "transitions": [ { "default": "(1.0)"}]
+        },
+        "handk": {
+          "on_entry": [
+            "/function reload.handk"
+          ],
+          "transitions": [ { "default": "(1.0)"}]
+        },
+        "m500": {
+          "on_entry": [
+            "/function reload.m500"
+          ],
+          "transitions": [ { "default": "(1.0)"}]
+        },
+        "tomato": {
+          "on_entry": [
+            "/function reload.tomato"
+          ],
+          "transitions": [ { "default": "(1.0)"}]
+        },
+        "hekart": {
+          "on_entry": [
+            "/function reload.hekart"
+          ],
+          "transitions": [ { "default": "(1.0)"}]
+        },
+        "zyuukenn": {
+          "on_entry": [
+            "/function reload.zyuukenn"
+          ],
+          "transitions": [ { "default": "(1.0)"}]
+        },
+        "scar": {
+          "on_entry": [
+            "/function reload.scar"
+          ],
+          "transitions": [ { "default": "(1.0)"}]
+        },
+        "minimi": {
+          "on_entry": [
+            "/function reload.minimi"
+          ],
+          "transitions": [ { "default": "(1.0)"}]
+        },
+        "m870": {
+          "on_entry": [
+            "/function reload.m870"
+          ],
+          "transitions": [ { "default": "(1.0)"}]
+        },
+        "foton": {
+          "on_entry": [
+            "/function attack.foton"
+          ],
+          "transitions": [ { "default": "(1.0)"}]
+        },
+        "ssg": {
+          "on_entry": [
+            "/function reload.ssg"
+          ],
+          "transitions": [ { "default": "(1.0)"}]
+        },
+        "rpg": {
+          "on_entry": [
+            "/function reload.rpg"
+          ],
+          "transitions": [ { "default": "(1.0)"}]
+        },
+        "lstar": {
+          "on_entry": [
+            "/execute @s[scores={lstar=..98}] ~~~ function reload.lstar"
+          ],
+          "transitions": [ { "default": "(1.0)"}]
+        }
+      }
+    }
+  }
+}

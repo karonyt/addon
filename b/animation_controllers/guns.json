@@ -1,0 +1,211 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.guns": {
+      "states": {
+        "default": {
+          "transitions": [
+            { "pchan": "query.get_equipped_item_name == 'pchan' && query.item_remaining_use_duration > 0.10" },
+            { "hekart": "query.get_equipped_item_name == 'hekart' && query.item_remaining_use_duration > 0.10" },
+            { "tomato": "query.get_equipped_item_name == 'tomato' && query.item_remaining_use_duration > 0.10" },
+            { "zyuukenn": "query.get_equipped_item_name == 'zyuukenn' && query.item_remaining_use_duration > 0.10" },
+            { "handk": "query.get_equipped_item_name == 'handk' && query.item_remaining_use_duration > 0.10" },
+            { "m500": "query.get_equipped_item_name == 'm500' && query.item_remaining_use_duration > 0.10" },
+            { "scar": "query.get_equipped_item_name == 'scar' && query.item_remaining_use_duration > 0.10" },
+            { "minimi": "query.get_equipped_item_name == 'minimi' && query.item_remaining_use_duration > 0.10" },
+            { "m870": "query.get_equipped_item_name == 'm870' && query.item_remaining_use_duration > 0.10" },
+            { "ssg": "query.get_equipped_item_name == 'ssg' && query.item_remaining_use_duration > 0.10" },
+            { "rpg": "query.get_equipped_item_name == 'rpg' && query.item_remaining_use_duration > 0.10" },
+            { "jump": "query.get_equipped_item_name == 'jump' && query.item_remaining_use_duration > 0.10" },
+            { "speed": "query.get_equipped_item_name == 'speed' && query.item_remaining_use_duration > 0.10" },
+            { "kaihuku": "query.get_equipped_item_name == 'kaihuku' && query.item_remaining_use_duration > 0.10" },
+            { "invisible": "query.get_equipped_item_name == 'invisible' && query.item_remaining_use_duration > 0.10" },
+            { "mas": "query.get_equipped_item_name == 'mas' && query.item_remaining_use_duration > 0.10" },
+            { "vector": "query.get_equipped_item_name == 'vector' && query.item_remaining_use_duration > 0.10" },
+            { "resistance": "query.get_equipped_item_name == 'resistance' && query.item_remaining_use_duration > 0.10" }
+          ]
+        },
+        "pchan": {
+          "on_entry": [
+            "@s event_pchan",
+            "/execute @s[scores={pchan=1..}] ~~~ playsound happou @a ~~~",
+            "/scoreboard players remove @s[scores={pchan=1..}] pchan 1"
+          ],
+          "transitions": [ {"default":"variable.cooltime = (variable.cooltime ?? 0);variable.cooltime = variable.cooltime < 1 ? variable.cooltime + 1:0;return variable.cooltime == 0;"}]
+        },
+        "hekart": {
+          "on_entry": [
+            "@s event_hekart",
+            "/execute @s[scores={hekart=1..}] ~~~ playsound happou @a ~~~",
+            "/scoreboard players remove @s[scores={hekart=1..}] hekart 1"
+          ],
+          "transitions": [ { "default": "variable.cooltime = (variable.cooltime ?? 0);variable.cooltime = variable.cooltime < 60 ? variable.cooltime + 1:0;return variable.cooltime == 0;"}]
+        },
+        "tomato": {
+          "on_entry": [
+            "@s event_tomato",            
+            "/execute @s[scores={tomato=1..}] ~~~ playsound happou @a ~~~",
+            "/scoreboard players remove @s[scores={tomato=1..}] tomato 1"
+          ],
+          "transitions": [ { "default": "variable.cooltime = (variable.cooltime ?? 0);variable.cooltime = variable.cooltime < 5 ? variable.cooltime + 1:0;return variable.cooltime == 0;"}]
+        },
+        "zyuukenn": {
+          "on_entry": [
+            "@s event_zyuukenn",
+            "/execute @s[scores={zyuukenn=1..}] ~~~ playsound happou @a ~~~",
+            "/scoreboard players remove @s[scores={zyuukenn=1..}] zyuukenn 1"
+          ],
+          "transitions": [ { "default": "variable.cooltime = (variable.cooltime ?? 0);variable.cooltime = variable.cooltime < 20 ? variable.cooltime + 1:0;return variable.cooltime == 0;"}]
+        },
+        "handk": {
+          "on_entry": [
+            "@s event_handk",
+            "/execute @s[scores={handk=1..}] ~~~ playsound happou @a ~~~",
+            "/scoreboard players remove @s[scores={handk=1..}] handk 1"
+          ],
+          "transitions": [ { "default": "variable.cooltime = (variable.cooltime ?? 0);variable.cooltime = variable.cooltime < 5 ? variable.cooltime + 1:0;return variable.cooltime == 0;"}]
+        },
+        "minimi": {
+          "on_entry": [
+            "@s event_minimi",
+            "/execute @s[scores={minimi=1..}] ~~~ playsound happou @a ~~~",
+            "/scoreboard players remove @s[scores={minimi=1..}] minimi 1"
+          ],
+          "transitions": [ { "default": "variable.cooltime = (variable.cooltime ?? 0);variable.cooltime = variable.cooltime < 0 ? variable.cooltime + 1:0;return variable.cooltime == 0;"}]
+        },
+        "m500": {
+          "on_entry": [
+            "@s event_m500",
+            "/execute @s[scores={m500=1..}] ~~~ playsound happou @a ~~~",
+            "/scoreboard players remove @s[scores={m500=1..}] m500 1"
+          ],
+          "transitions": [ { "default": "variable.cooltime = (variable.cooltime ?? 0);variable.cooltime = variable.cooltime < 18 ? variable.cooltime + 1:0;return variable.cooltime == 0;"}]
+        },
+        "scar": {
+          "on_entry": [
+            "@s event_scar",
+            "/execute @s[scores={scar=1..}] ~~~ playsound happou @a ~~~",
+            "/scoreboard players remove @s[scores={scar=1..}] scar 1"
+          ],
+          "transitions": [ { "default": "variable.cooltime = (variable.cooltime ?? 0);variable.cooltime = variable.cooltime < 3 ? variable.cooltime + 1:0;return variable.cooltime == 0;"}]
+        },
+        "m870": {
+          "on_entry": [
+            "@s event_m870",
+            "/execute @s[scores={m870=1..}] ~~~ playsound happou @a ~~~",
+            "/scoreboard players remove @s[scores={m870=1..}] m870 1"
+          ],
+          "transitions": [ { "default": "variable.cooltime = (variable.cooltime ?? 0);variable.cooltime = variable.cooltime < 19 ? variable.cooltime + 1:0;return variable.cooltime == 0;"}]
+        },
+        "rpg": {
+          "on_entry": [
+            "@s event_rpg",
+            "/execute @s[scores={rpg=1..}] ~~~ playsound happou @a ~~~",
+            "/scoreboard players remove @s[scores={rpg=1..}] rpg 1"
+          ],
+          "transitions": [ { "default": "variable.cooltime = (variable.cooltime ?? 0);variable.cooltime = variable.cooltime < 60 ? variable.cooltime + 1:0;return variable.cooltime == 0;"}]
+        },
+        "ssg": {
+          "on_entry": [
+            "@s event_ssg",
+            "/execute @s[scores={ssg=1..}] ~~~ playsound happou @a ~~~",
+            "/scoreboard players remove @s[scores={ssg=1..}] ssg 1"
+          ],
+          "transitions": [ { "default": "variable.cooltime = (variable.cooltime ?? 0);variable.cooltime = variable.cooltime < 9 ? variable.cooltime + 1:0;return variable.cooltime == 0;"}]
+        },
+        "prowler": {
+          "on_entry": [
+            "@s event_prowler",
+            "/scoreboard players remove @s[tag=!reload] prowler 1",
+            "/execute @s[tag=!reload] ~~~ playsound fire.prowler @a ~~~"
+          ],
+          "transitions": [ { "prowler2": "variable.cooltime = (variable.cooltime ?? 0);variable.cooltime = variable.cooltime < 1 ? variable.cooltime + 1:0;return variable.cooltime == 0;"}]
+        },
+        "prowler2": {
+          "on_entry": [
+            "@s event_prowler",
+            "/scoreboard players remove @s[tag=!reload] prowler 1"
+          ],
+          "transitions": [ { "prowler3": "variable.cooltime = (variable.cooltime ?? 0);variable.cooltime = variable.cooltime < 1 ? variable.cooltime + 1:0;return variable.cooltime == 0;"}]
+        },
+        "prowler3": {
+          "on_entry": [
+            "@s event_prowler",
+            "/scoreboard players remove @s[tag=!reload] prowler 1"
+          ],
+          "transitions": [ { "prowler4": "variable.cooltime = (variable.cooltime ?? 0);variable.cooltime = variable.cooltime < 1 ? variable.cooltime + 1:0;return variable.cooltime == 0;"}]
+        },
+        "prowler4": {
+          "on_entry": [
+            "@s event_prowler",
+            "/scoreboard players remove @s[tag=!reload] prowler 1"
+          ],
+          "transitions": [ { "prowler5": "variable.cooltime = (variable.cooltime ?? 0);variable.cooltime = variable.cooltime < 1 ? variable.cooltime + 1:0;return variable.cooltime == 0;"}]
+        },
+        "prowler5": {
+          "on_entry": [
+            "@s event_prowler",
+            "/scoreboard players remove @s[tag=!reload] prowler 1"
+          ],
+          "transitions": [ { "default": "variable.cooltime = (variable.cooltime ?? 0);variable.cooltime = variable.cooltime < 8 ? variable.cooltime + 1:0;return variable.cooltime == 0;"}]
+        },
+        "vector": {
+          "on_entry": [
+            "@s event_vector",
+            "/execute @s[scores={vector=1..}] ~~~ playsound happou @a ~~~",
+            "/scoreboard players remove @s[scores={vector=1..}] vector 1"
+          ],
+          "transitions": [ { "default": "variable.cooltime = (variable.cooltime ?? 0);variable.cooltime = variable.cooltime < 0 ? variable.cooltime + 1:0;return variable.cooltime == 0;"}]
+        },
+        "jump": {
+          "on_entry": [
+            "/effect @s levitation 1 10 true",
+            "/clear @s tomato:jump 0 1"
+          ],
+          "transitions": [ { "default": "!query.is_using_item"}]
+         },
+        "fishing_rod": {
+          "on_entry": [
+            "@s event_fishing"
+          ],
+          "transitions": [ { "default": "!query.is_using_item"}]
+         },
+         "speed": {
+          "on_entry": [
+            "/effect @s speed 5 5 true",
+            "/clear @s tomato:speed 0 1"
+          ],
+          "transitions": [ { "default": "!query.is_using_item"}]
+        },
+       "kaihuku": {
+          "on_entry": [
+            "/effect @s regeneration 10 0 true",
+            "/clear @s tomato:kaihuku 0 1"
+          ],
+          "transitions": [ { "default": "!query.is_using_item"}]
+        },
+         "invisible": {
+          "on_entry": [
+            "/effect @s invisibility 1 10 true",
+            "/clear @s tomato:invisible 0 1"
+          ],
+          "transitions": [ { "default": "!query.is_using_item"}]
+        },
+       "kaihuku": {
+          "on_entry": [
+            "/effect @s regeneration 10 0 true",
+            "/clear @s tomato:kaihuku 0 1"
+          ],
+          "transitions": [ { "default": "!query.is_using_item"}]
+        },
+      "resistance": {
+          "on_entry": [
+            "/effect @s resistance 5 1 true",
+            "/clear @s tomato:resistance 0 1"
+          ],
+          "transitions": [ { "default": "!query.is_using_item"}]
+        }
+      }
+    }
+  }
+}

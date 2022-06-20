@@ -1,0 +1,111 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.has": {
+      "states": {
+        "default": {
+          "transitions": [
+            { "pchan": "(query.get_equipped_item_name == 'pchan')" },
+            { "tomato": "(query.get_equipped_item_name == 'tomato')" },
+            { "hekart": "(query.get_equipped_item_name == 'hekart')" },
+            { "zyuukenn": "(query.get_equipped_item_name == 'zyuukenn')" },
+            { "handk": "(query.get_equipped_item_name == 'handk')" },
+            { "m500": "(query.get_equipped_item_name == 'm500')" },
+            { "scar": "(query.get_equipped_item_name == 'scar')" },
+            { "minimi": "(query.get_equipped_item_name == 'minimi')" },
+            { "m870": "(query.get_equipped_item_name == 'm870')" },
+            { "foton": "(query.get_equipped_item_name == 'foton')" },
+            { "ssg": "(query.get_equipped_item_name == 'ssg')" },
+            { "rpg": "(query.get_equipped_item_name == 'rpg')" },
+            { "vector": "(query.get_equipped_item_name == 'vector')" },
+            { "lstar": "(query.get_equipped_item_name == 'lstar')" }
+          ]
+        },
+        "pchan": {
+          "on_entry": [
+            "/function has.pchan"
+          ],
+          "transitions": [ { "default": "(1.0)" } ]
+        },
+        "tomato": {
+          "on_entry": [
+            "/function has.tomato"
+          ],
+          "transitions": [ { "default": "(1.0)" } ]
+        },
+        "hekart": {
+          "on_entry": [
+            "/function has.hekart"
+          ],
+          "transitions": [ { "default": "(1.0)" } ]
+        },
+        "zyuukenn": {
+          "on_entry": [
+            "/function has.zyuukenn"
+          ],
+          "transitions": [ { "default": "(1.0)" } ]
+        },
+        "handk": {
+          "on_entry": [
+            "/function has.handk"
+          ],
+          "transitions": [ { "default": "(1.0)" } ]
+        },
+        "m500": {
+          "on_entry": [
+            "/function has.m500"
+          ],
+          "transitions": [ { "default": "(1.0)" } ]
+        },
+        "scar": {
+          "on_entry": [
+            "/function has.scar"
+          ],
+          "transitions": [ { "default": "(1.0)" } ]
+        },
+        "minimi": {
+          "on_entry": [
+            "/function has.minimi"
+          ],
+          "transitions": [ { "default": "(1.0)" } ]
+        },
+        "m870": {
+          "on_entry": [
+            "/function has.m870"
+          ],
+          "transitions": [ { "default": "(1.0)" } ]
+        },
+        "foton": {
+          "on_entry": [
+            "/function has.foton"
+          ],
+          "transitions": [ { "default": "(1.0)" } ]
+        },
+        "rpg": {
+          "on_entry": [
+            "/function has.rpg"
+          ],
+          "transitions": [ { "default": "(1.0)" } ]
+        },
+        "ssg": {
+          "on_entry": [
+            "/function has.ssg"
+          ],
+          "transitions": [ { "default": "(1.0)" } ]
+        },
+        "vector": {
+          "on_entry": [
+            "/function has.vector"
+          ],
+          "transitions": [ { "default": "(1.0)" } ]
+        },
+        "lstar": {
+          "on_entry": [
+            "/function has.lstar"
+          ],
+          "transitions": [ { "default": "(1.0)" } ]
+        }
+      }
+    }
+  }
+}
