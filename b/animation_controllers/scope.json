@@ -1,0 +1,49 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+      "controller.animation.scope": {
+        "states": {
+          "default": {
+            "transitions": [
+                { "hekart": "query.get_equipped_item_name == 'hekart' && query.is_sneaking" },
+{ "hs": "query.get_equipped_item_name == 'hs' && query.is_sneaking" },
+                { "minimi": "query.get_equipped_item_name == 'minimi' "}
+            ]
+          },
+          "hekart": {
+            "transitions": [
+                {"default":"query.get_equipped_item_name != 'hekart' || !query.is_sneaking"}
+            ],
+            "on_entry": [
+              "/effect @s slowness 99999 7 true"
+            ],
+            "on_exit": [
+                "/effect @s slowness 0 0"
+            ]
+          },
+"hs": {
+            "transitions": [
+                {"default":"query.get_equipped_item_name != 'hs' || !query.is_sneaking"}
+            ],
+            "on_entry": [
+              "/effect @s slowness 99999 7 true"
+            ],
+            "on_exit": [
+                "/effect @s slowness 0 0"
+            ]
+          },
+          "minimi": {
+            "transitions": [
+                {"default":"query.get_equipped_item_name != 'minimi' "}
+            ],
+            "on_entry": [
+              "/effect @s slowness 99999 1 true"
+            ],
+            "on_exit": [
+                "/effect @s slowness 0 0"
+            ]
+          }
+        }
+      }
+   }
+}
