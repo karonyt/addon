@@ -1,0 +1,17 @@
+{
+  "format_version": 1,
+  "header": {
+    "description": "gtopack",
+    "name": "gto v1",
+    "uuid":"7cd2526e-c408-64b6-6766-d42b5b895716",
+    "version": [0, 0, 1]
+  },
+  "modules": [
+    {
+      "description": "",
+      "type": "data",
+   "uuid":"3034105d-9448-5b75-45c3-c334e49e7883",
+      "version": [0, 0, 1]
+    }
+  ]
+}
