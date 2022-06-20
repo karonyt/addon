@@ -1,0 +1,681 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:entity": {    
+    "description": {
+      "identifier": "minecraft:player",
+      "is_spawnable": false,
+      "is_summonable": false,
+      "is_experimental": false,
+      "scripts": {
+        "animate": [ "guns" , "has","reload","scope" ],
+        "pre_animation": [
+          "variable.cooltime = 0.0;"
+        ]
+      },
+      "animations": {
+        "guns": "controller.animation.guns",
+        "has": "controller.animation.has",
+        "reload": "controller.animation.reload",
+        "scope": "controller.animation.scope"
+      }
+    },
+    "component_groups": {
+      "minecraft:pchan": {
+        "minecraft:spawn_entity": [
+          {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "spawn_entity": "tomato:pchan_bullet",
+            "num_to_spawn": 1,
+            "filters":{
+              "test":"has_tag","operator":"!=","value":"rspchan"
+           }
+         }
+       ],
+       "minecraft:spell_effects": {
+        }
+          },
+      "minecraft:hekart": {
+        "minecraft:spawn_entity": [
+          {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "spawn_entity": "tomato:hekart_bullet",
+            "num_to_spawn": 1,
+            "filters":{
+              "test":"has_tag","operator":"!=","value":"rshekart"
+            }
+          }
+        ],
+        "minecraft:spell_effects": {
+        }
+      },
+"minecraft:minimi": {
+        "minecraft:spawn_entity": [
+          {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "spawn_entity": "tomato:minimi_bullet",
+            "num_to_spawn": 5,
+            "filters":{
+              "test":"has_tag","operator":"!=","value":"rsminimi"
+            }
+          }
+        ],
+        "minecraft:spell_effects": {
+        }
+      },
+      "minecraft:tomato": {
+        "minecraft:spawn_entity": [
+          {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "spawn_entity": "tomato:tomato_bullet",
+            "num_to_spawn": 1,
+            "filters":{
+              "test":"has_tag","operator":"!=","value":"rstomato"
+            }
+          }
+        ],
+        "minecraft:spell_effects": {
+        }
+      },
+      "minecraft:zyuukenn": {
+        "minecraft:spawn_entity": [
+          {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "spawn_entity": "tomato:zyuukenn_bullet",
+            "num_to_spawn": 1,
+            "filters":{
+              "test":"has_tag","operator":"!=","value":"rszyuukenn"
+            }
+          }
+        ],
+        "minecraft:spell_effects": {
+        }
+      },
+      "minecraft:scar": {
+        "minecraft:spawn_entity": [
+          {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "spawn_entity": "tomato:scar_bullet",
+            "num_to_spawn": 3,
+            "filters":{
+              "test":"has_tag","operator":"!=","value":"rsscar"
+            }
+          }
+        ],
+        "minecraft:spell_effects": {
+        }
+      },
+      "minecraft:handk": {
+        "minecraft:spawn_entity": [
+          {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "spawn_entity": "tomato:handk_bullet",
+            "num_to_spawn": 1,
+            "filters":{
+              "test":"has_tag","operator":"!=","value":"rshandk"
+            }
+          }
+        ],
+        "minecraft:spell_effects": {
+        }
+      },
+      "minecraft:fishing": {
+        "minecraft:spawn_entity": [
+          {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "spawn_entity": "minecraft:arrow",
+            "num_to_spawn": 1
+          }
+        ],
+        "minecraft:spell_effects": {
+        }
+      },
+      "minecraft:rpg": {
+        "minecraft:spawn_entity": [
+          {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "spawn_entity": "tomato:rpg_bullet",
+            "num_to_spawn": 1,
+            "filters":{
+              "test":"has_tag","operator":"!=","value":"rsrpg"
+            }
+          }
+        ],
+        "minecraft:spell_effects": {
+        }
+      },
+      "minecraft:m500": {
+        "minecraft:spawn_entity": [
+          {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "spawn_entity": "tomato:m500_bullet",
+            "num_to_spawn": 5,
+            "filters":{
+              "test":"has_tag","operator":"!=","value":"rsm500"
+            }
+          }
+        ],
+        "minecraft:spell_effects": {
+        }
+      },
+      "minecraft:m870": {
+        "minecraft:spawn_entity": [
+          {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "spawn_entity": "tomato:m870_bullet",
+            "num_to_spawn": 8,
+            "filters":{
+              "test":"has_tag","operator":"!=","value":"rsm870"
+            }
+          }
+        ],
+        "minecraft:spell_effects": {
+        }
+      },
+      "minecraft:rpg": {
+        "minecraft:spawn_entity": [
+          {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "spawn_entity": "tomato:rpg_bullet",
+            "num_to_spawn": 1,
+            "filters":{
+              "test":"has_tag","operator":"!=","value":"rsrpg"
+            }
+          }
+        ],
+        "minecraft:spell_effects": {
+        }
+      },
+      "minecraft:ssg": {
+        "minecraft:spawn_entity": [
+          {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "spawn_entity": "tomato:ssg_bullet",
+            "num_to_spawn": 1,
+            "filters":{
+              "test":"has_tag","operator":"!=","value":"rsssg"
+            }
+          }
+        ],
+        "minecraft:spell_effects": {
+        }
+      },
+      "minecraft:vector": {
+        "minecraft:spawn_entity": [
+          {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "spawn_entity": "tomato:vector_bullet",
+            "num_to_spawn": 2,
+            "filters":{
+              "test":"has_tag","operator":"!=","value":"rsvector"
+            }
+          }
+        ],
+        "minecraft:spell_effects": {
+        }
+      },
+      "minecraft:ak": {
+        "minecraft:spawn_entity": [
+          {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "spawn_entity": "tomato:ak_bullet",
+            "num_to_spawn": 1,
+            "filters":{
+              "test":"has_tag","operator":"!=","value":"rsak"
+            }
+          }
+        ],
+        "minecraft:spell_effects": {
+        }
+      },
+      "minecraft:hs": {
+        "minecraft:spawn_entity": [
+          {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "spawn_entity": "tomato:hs_bullet",
+            "num_to_spawn": 1,
+            "filters":{
+              "test":"has_tag","operator":"!=","value":"rshs"
+            }
+          }
+        ],
+        "minecraft:spell_effects": {
+        }
+      },
+      "minecraft:add_bad_omen": {
+        "minecraft:spell_effects": {
+          "add_effects": [
+            {
+              "effect": "bad_omen",
+              "duration": 6000,
+              "display_on_screen_animation": true
+            }
+          ]
+        },
+        "minecraft:timer": {
+          "time": [ 0, 0 ],
+          "looping": false,
+          "time_down_event": {
+            "event": "minecraft:clear_add_bad_omen",
+            "target": "self"
+          }
+        }
+      },
+      "minecraft:clear_bad_omen_spell_effect": {
+        "minecraft:spell_effects": {
+        }
+      },
+      "minecraft:raid_trigger": {
+        "minecraft:raid_trigger": {
+          "triggered_event": {
+            "event": "minecraft:remove_raid_trigger",
+            "target": "self"
+          }
+        },
+        "minecraft:spell_effects": {
+          "remove_effects": "bad_omen"
+        }
+      }
+    },
+    "components": {
+      "minecraft:type_family": {
+        "family": [ "player" ]
+      },
+      "minecraft:environment_sensor": [
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_mob_effect",
+                  "subject": "self",
+                  "value": "bad_omen"
+                },
+                {
+                  "test": "is_in_village",
+                  "subject": "self",
+                  "value": true
+                }
+              ]
+            },
+            "event": "minecraft:trigger_raid"
+          }
+        }
+      ],
+      "minecraft:is_hidden_when_invisible": {
+      },
+      "minecraft:loot": {
+        "table": "loot_tables/empty.json"
+      },
+      "minecraft:collision_box": {
+        "width": 0.6,
+        "height": 1.8
+      },
+      "minecraft:can_climb": {
+      },
+      "minecraft:movement": {
+        "value": 0.1
+      },
+      "minecraft:attack": {
+        "damage": 0
+      },
+      "minecraft:player.saturation": {
+        "value": 20
+      },
+      "minecraft:player.exhaustion": {
+        "value": 0,
+        "max": 4
+      },
+      "minecraft:player.level": {
+        "value": 0,
+        "max": 24791
+      },
+      "minecraft:player.experience": {
+        "value": 0,
+        "max": 1
+      },
+      "minecraft:breathable": {
+        "totalSupply": 15,
+        "suffocateTime": -1,
+        "inhaleTime": 3.75,
+        "generatesBubbles": false
+      },
+			"minecraft:damage_sensor": {
+				"triggers": [
+					{
+						"on_damage": {
+							"filters": {
+								"any_of": [
+									{
+										"all_of": [
+											{
+												"test": "has_tag",
+												"subject": "other",
+												"value": "a"
+											},
+											{
+												"test": "has_tag",
+												"subject": "self",
+												"value": "a"
+											}
+										]
+									},
+									{
+										"all_of": [
+											{
+												"test": "has_tag",
+												"subject": "other",
+												"value": "b"
+											},
+											{
+												"test": "has_tag",
+												"subject": "self",
+												"value": "b"
+											}
+										]
+									},
+									{
+										"all_of": [
+											{
+												"test": "has_tag",
+												"subject": "other",
+												"value": "c"
+											},
+											{
+												"test": "has_tag",
+												"subject": "self",
+												"value": "c"
+           }
+										]
+      },
+									{
+										"all_of": [
+											{
+												"test": "has_tag",
+												"subject": "other",
+												"value": "d"
+											},
+											{
+												"test": "has_tag",
+												"subject": "self",
+												"value": "d"
+											}
+										]
+        }
+       ]
+      }
+						},
+						"deals_damage": false
+			},
+    {"on_damage" : {
+           "filters" : {
+           "any_of": [
+{
+										"all_of": [
+        {
+                  "test": "has_damage",
+                  "value": "fatal"
+                },
+                {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "player"
+               }
+              ]
+            }
+           ]
+        },
+            "event": "kill_count",
+            "target": "other"
+          },
+        "deals_damage" : true
+},
+        {"on_damage" : {
+           "filters" : {
+           "any_of": [
+              {
+               "all_of": [
+                {
+                  "test": "has_damage",
+                  "value": "fatal"
+                },
+                {
+                  "test": "is_family",
+                  "subject": "self",
+                  "value": "player"
+                }
+              ]
+            }
+           ]
+        },
+            "event": "kill_count",
+            "target": "other"
+          },
+   "deals_damage" : true
+       }
+     ]
+},
+      "minecraft:nameable": {
+        "alwaysShow": true,
+        "allowNameTagRenaming": false
+      },
+      "minecraft:physics": {
+      },
+      "minecraft:insomnia": {
+        "days_until_insomnia": 3
+      },
+      "minecraft:rideable": {
+        "seat_count": 2,
+        "family_types": [
+          "parrot_tame"
+        ],
+        "pull_in_entities": true,
+        "seats": [
+          {
+            "position": [
+              0.4,
+              -0.15,
+              0.04
+            ],
+            "min_rider_count": 0,
+            "max_rider_count": 0,
+            "lock_rider_rotation": 0
+          },
+          {
+            "position": [
+              -0.4,
+              -0.15,
+              0.04
+            ],
+            "min_rider_count": 1,
+            "max_rider_count": 2,
+            "lock_rider_rotation": 0
+          }
+        ]
+      },
+      "minecraft:scaffolding_climber": {
+      }
+    },
+    "events": {
+      "kill_count": {
+        "run_command": {
+          "command": [
+            "scoreboard players add @s kill 1",
+            "give @s tomato:itik 5 0",
+            "function kill"
+          ],
+          "target": "self"
+        }
+      },
+      "event_pchan": {
+        "add": {
+          "component_groups": [
+            "minecraft:pchan"
+          ]
+        }
+      },
+      "event_hekart": {
+        "add": {
+          "component_groups": [
+            "minecraft:hekart"
+          ]
+        }
+      },
+      "event_tomato": {
+        "add": {
+          "component_groups": [
+            "minecraft:tomato"
+          ]
+        }
+      },
+      "event_minimi": {
+        "add": {
+          "component_groups": [
+            "minecraft:minimi"
+          ]
+        }
+      },
+      "event_scar": {
+        "add": {
+          "component_groups": [
+            "minecraft:scar"
+          ]
+        }
+      },
+      "event_zyuukenn": {
+        "add": {
+          "component_groups": [
+            "minecraft:zyuukenn"
+          ]
+        }
+      },
+      "event_handk": {
+        "add": {
+          "component_groups": [
+            "minecraft:handk"
+          ]
+        }
+      },
+      "event_m500": {
+        "add": {
+          "component_groups": [
+            "minecraft:m500"
+          ]
+        }
+      },
+      "event_m870": {
+        "add": {
+          "component_groups": [
+            "minecraft:m870"
+          ]
+        }
+      },
+      "event_rpg": {
+        "add": {
+          "component_groups": [
+            "minecraft:rpg"
+          ]
+        }
+      },
+      "event_ssg": {
+        "add": {
+          "component_groups": [
+            "minecraft:ssg"
+          ]
+        }
+      },
+      "event_vector": {
+        "add": {
+          "component_groups": [
+            "minecraft:vector"
+          ]
+        }
+      },
+      "event_hs": {
+        "add": {
+          "component_groups": [
+            "minecraft:hs"
+          ]
+        }
+      },
+      "event_ak": {
+        "add": {
+          "component_groups": [
+            "minecraft:ak"
+          ]
+        }
+      },
+      "event_fishing": {
+        "add": {
+          "component_groups": [
+            "minecraft:fishing"
+          ]
+        }
+      },
+      "minecraft:gain_bad_omen": {
+        "add": {
+          "component_groups": [
+            "minecraft:add_bad_omen"
+          ]
+        }
+      },
+      "minecraft:clear_add_bad_omen": {
+        "remove": {
+          "component_groups": [
+            "minecraft:add_bad_omen"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "minecraft:clear_bad_omen_spell_effect"
+          ]
+        }
+      },
+      "minecraft:trigger_raid": {
+        "add": {
+          "component_groups": [
+            "minecraft:raid_trigger"
+          ]
+        }
+      },
+      "minecraft:remove_raid_trigger": {
+        "remove": {
+          "component_groups": [
+            "minecraft:raid_trigger"
+          ]
+        }
+      }
+    }
+  }
+}
