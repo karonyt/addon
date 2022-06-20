@@ -2,7 +2,7 @@
   "format_version": "1.17.0",
   "minecraft:item": {
     "description": {
-      "identifier": "tomato:ak",
+      "identifier": "tomato:rpg",
       "category" : "equipment" 
     },
     "components": {
@@ -11,9 +11,9 @@
       "minecraft:hand_equipped": true,
       "minecraft:use_duration": 99999,
       "minecraft:icon": {
-        "texture": "ak"},
+        "texture": "rpg"},
       "minecraft:display_name":{
-          "value":"§lAK47"
+          "value":"§lRPG7"
         },
       "minecraft:render_offsets": {
         "main_hand": {

@@ -2,8 +2,8 @@
   "format_version": "1.17.0",
   "minecraft:item": {
     "description": {
-      "identifier": "tomato:ak",
-      "category" : "equipment" 
+      "identifier": "tomato:mas",
+      "category" : "Equipment" 
     },
     "components": {
       "minecraft:can_destroy_in_creative": false,
@@ -11,24 +11,21 @@
       "minecraft:hand_equipped": true,
       "minecraft:use_duration": 99999,
       "minecraft:icon": {
-        "texture": "ak"},
+        "texture": "mas"},
       "minecraft:display_name":{
-          "value":"§lAK47"
+          "value":"§lマスティフショットガン"
         },
       "minecraft:render_offsets": {
         "main_hand": {
           "third_person": {
-            "scale": [0.009, 0.009, 0.009]
+            "scale": [0.01, 0.01, 0.01]
           },
           "first_person": {
-            "scale": [0.005, 0.005, 0.005]
-        }
-       }
-      },
-      "minecraft:creative_category": {
-        "parent": "itemGroup.name.guns"
-      },
-      "minecraft:food": {
+            "scale": [0.1, 0.1, 0.1]
+            }
+          }
+        },
+       "minecraft:food": {
         "nutrition": 0,
         "saturation_modifier": "supernatural",
         "can_always_eat": true
@@ -36,3 +33,18 @@
     }
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

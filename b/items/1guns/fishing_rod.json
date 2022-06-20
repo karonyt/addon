@@ -2,7 +2,7 @@
   "format_version": "1.17.0",
   "minecraft:item": {
     "description": {
-      "identifier": "tomato:ak",
+      "identifier": "tomato:fishing",
       "category" : "equipment" 
     },
     "components": {
@@ -11,23 +11,7 @@
       "minecraft:hand_equipped": true,
       "minecraft:use_duration": 99999,
       "minecraft:icon": {
-        "texture": "ak"},
-      "minecraft:display_name":{
-          "value":"§lAK47"
-        },
-      "minecraft:render_offsets": {
-        "main_hand": {
-          "third_person": {
-            "scale": [0.009, 0.009, 0.009]
-          },
-          "first_person": {
-            "scale": [0.005, 0.005, 0.005]
-        }
-       }
-      },
-      "minecraft:creative_category": {
-        "parent": "itemGroup.name.guns"
-      },
+        "texture": "fishing_rod"},
       "minecraft:food": {
         "nutrition": 0,
         "saturation_modifier": "supernatural",

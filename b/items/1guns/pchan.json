@@ -2,28 +2,29 @@
   "format_version": "1.17.0",
   "minecraft:item": {
     "description": {
-      "identifier": "tomato:ak",
+      "identifier": "tomato:pchan",
       "category" : "equipment" 
     },
+
     "components": {
       "minecraft:can_destroy_in_creative": false,
       "minecraft:max_stack_size": 1,
       "minecraft:hand_equipped": true,
       "minecraft:use_duration": 99999,
       "minecraft:icon": {
-        "texture": "ak"},
+        "texture": "pchan"},
       "minecraft:display_name":{
-          "value":"§lAK47"
+          "value":"§lピーちゃん(P90)"
         },
       "minecraft:render_offsets": {
         "main_hand": {
           "third_person": {
-            "scale": [0.009, 0.009, 0.009]
+            "scale": [0.0095, 0.01, 0.0095]
           },
           "first_person": {
-            "scale": [0.005, 0.005, 0.005]
+            "scale": [0.0045, 0.0055, 0.0045]
         }
-       }
+      }
       },
       "minecraft:creative_category": {
         "parent": "itemGroup.name.guns"
