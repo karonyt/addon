@@ -1,0 +1,30 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "tomato:10000000en",
+			"category": "Equipment"
+		},
+		"components": {
+			"minecraft:icon": {
+				"texture": "10000000en"
+			},	
+			"minecraft:use_duration": 32,
+   "minecraft:foil":true,
+   "minecraft:max_stack_size": 50,
+   "minecraft:display_name":{
+          "value":"§d§l10000000000クレジット"
+        },
+      "minecraft:render_offsets": {
+        "main_hand": {
+          "third_person": {
+            "scale": [0.02, 0.02, 0.02]
+          },
+          "first_person": {
+            "scale": [0.0045, 0.0045, 0.0045]
+          }
+        }
+      }
+    }
+  }
+}
