@@ -1,0 +1,11 @@
+kill @e[type=tomato:hekart_bullet,scores={killbullet=400..}]
+kill @e[type=tomato:tomato_bullet,scores={killbullet=70..}]
+kill @e[type=tomato:handk_bullet,scores={killbullet=10..}]
+kill @e[type=tomato:pchan_bullet,scores={killbullet=15..}]
+kill @e[type=tomato:m500_bullet,scores={killbullet=8..}]
+kill @e[type=tomato:zyuukenn_bullet,scores={killbullet=30..}]
+kill @e[type=tomato:scar_bullet,scores={killbullet=40..}]
+kill @e[type=tomato:minimi_bullet,scores={killbullet=15..}]　
+kill @e[type=tomato:m870_bullet,scores={killbullet=9..}]
+kill @e[type=tomato:rpg_bullet,scores={killbullet=40..}]
+kill @e[type=tomato:ssg_bullet,scores={killbullet=30..}]
