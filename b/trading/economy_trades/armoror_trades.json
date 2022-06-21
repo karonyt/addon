@@ -1,0 +1,303 @@
+{
+  "tiers": [
+    {
+      "total_exp_required": 0,
+      "groups": [
+        {
+          "num_to_select": 1,
+          "trades": [
+            {
+              "wants": [
+                {
+                  "item": "tomato:itik",
+                  "quantity": 50
+                }
+              ],
+              "gives": [
+                {
+                  "item": "tomato:juuk",
+                  "quantity": 1
+                }
+              ],
+              "max_uses": -1
+            }
+          ]
+        },
+        {
+          "num_to_select": 1,
+          "trades": [
+            {
+              "wants": [
+                {
+                  "item": "tomato:juuk",
+                  "quantity": 20,
+                  "price_multiplier": 0.2
+                }
+              ],
+              "gives": [
+                {
+                  "item": "tomato:hyakuk",
+                  "quantity": 1
+                }
+              ],
+              "max_uses": -1
+            }
+          ]
+        },
+        {
+          "num_to_select": 1,
+          "trades": [
+            {
+              "wants": [
+                {
+                  "item": "tomato:hyakuk",
+                  "quantity": 10,
+                  "price_multiplier": 0.2
+                }
+              ],
+              "gives": [
+                {
+                  "item": "tomato:1000en",
+                  "quantity": 1
+                }
+              ],
+              "max_uses": -1
+            }
+          ]
+        },
+        {
+          "num_to_select": 1,
+          "trades": [
+            {
+              "wants": [
+                {
+                  "item": "tomato:1000en",
+                  "quantity": 50,
+                  "price_multiplier": 0.2
+                }
+              ],
+              "gives": [
+                {
+                  "item": "tomato:10000en",
+                  "quantity": 1
+                }
+              ],
+              "max_uses": -1
+            }
+          ]
+        },
+        {
+          "num_to_select": 1,
+          "trades": [
+            {
+              "wants": [
+                {
+                  "item": "tomato:10000en",
+                  "quantity": 20,
+                  "price_multiplier": 0.2
+                }
+              ],
+              "gives": [
+                {
+                  "item": "tomato:100000en",
+                  "quantity": 1
+                }
+              ],
+              "max_uses": -1
+            }
+          ]
+        },
+        {
+          "num_to_select": 1,
+          "trades": [
+            {
+              "wants": [
+                {
+                  "item": "tomato:100000en",
+                  "quantity": 50,
+                  "price_multiplier": 0.2
+                }
+              ],
+              "gives": [
+                {
+                  "item": "tomato:1000000en",
+                  "quantity": 1
+                }
+              ],
+              "max_uses": -1
+            }
+          ]
+        },
+        {
+          "num_to_select": 1,
+          "trades": [
+            {
+              "wants": [
+                {
+                  "item": "tomato:1000000en",
+                  "quantity": 20,
+                  "price_multiplier": 0.2
+                }
+              ],
+              "gives": [
+                {
+                  "item": "tomato:10000000en",
+                  "quantity": 1
+                }
+              ],
+              "max_uses": -1
+            }
+          ]
+        },
+        {
+          "num_to_select": 1,
+          "trades": [
+            {
+              "wants": [
+                {
+                  "item": "tomato:10000000en",
+                  "quantity": 1
+ ,
+                  "price_multiplier": 0.2
+                }
+              ],
+              "gives": [
+                {
+                  "item": "tomato:1000000en",
+                  "quantity": 20
+                }
+              ],
+              "max_uses": -1
+            }
+          ]
+        },
+        {
+          "num_to_select": 1,
+          "trades": [
+            {
+              "wants": [
+                {
+                  "item": "tomato:1000000en",
+                  "quantity": 1,
+                  "price_multiplier": 0.2
+                }
+              ],
+              "gives": [
+                {
+                  "item": "tomato:100000en",
+                  "quantity": 50
+                }
+              ],
+              "max_uses": -1
+            }
+          ]
+        },
+        {
+          "num_to_select": 1,
+          "trades": [
+            {
+              "wants": [
+                {
+                  "item": "tomato:100000en",
+                  "quantity": 1,
+                  "price_multiplier": 0.2
+                }
+              ],
+              "gives": [
+                {
+                  "item": "tomato:10000en",
+                  "quantity": 20
+                }
+              ],
+              "max_uses": -1
+            }
+          ]
+        },
+        {
+          "num_to_select": 1,
+          "trades": [
+            {
+              "wants": [
+                {
+                  "item": "tomato:10000en",
+                  "quantity": 1,
+                  "price_multiplier": 0.2
+                }
+              ],
+              "gives": [
+                {
+                  "item": "tomato:1000en",
+                  "quantity": 50
+                }
+              ],
+              "max_uses": -1
+            }
+          ]
+        },
+        {
+          "num_to_select": 1,
+          "trades": [
+            {
+              "wants": [
+                {
+                  "item": "tomato:1000en",
+                  "quantity": 1,
+                  "price_multiplier": 0.2
+                }
+              ],
+              "gives": [
+                {
+                  "item": "tomato:hyakuk",
+                  "quantity": 10
+                }
+              ],
+              "max_uses": -1
+            }
+          ]
+        },
+        {
+          "num_to_select": 1,
+          "trades": [
+            {
+              "wants": [
+                {
+                  "item": "tomato:hyakuk",
+                  "quantity": 1,
+                  "price_multiplier": 0.2
+                }
+              ],
+              "gives": [
+                {
+                  "item": "tomato:juuk",
+                  "quantity": 20
+                }
+              ],
+              "max_uses": -1
+            }
+          ]
+        },
+        {
+          "num_to_select": 1,
+          "trades": [
+            {
+              "wants": [
+                {
+                  "item": "tomato:juuk",
+                  "quantity": 1,
+                  "price_multiplier": 0.2
+                }
+              ],
+              "gives": [
+                {
+                  "item": "tomato:itik",
+                  "quantity": 50
+                }
+              ],
+              "max_uses": -1
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
