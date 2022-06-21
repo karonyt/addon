@@ -1,0 +1,218 @@
+{
+  "tiers": [
+    {
+      "total_exp_required": 0,
+      "groups": [
+        {
+          "num_to_select": 1,
+          "trades": [
+            {
+              "wants": [
+                {
+                  "item": "minecraft:porkchop",
+                  "quantity": 5
+                }
+              ],
+              "gives": [
+                {
+                  "item": "sao:col",
+                  "quantity": 3
+                }
+              ],
+              "max_uses": 9999
+            }
+          ]
+        },
+        {
+          "num_to_select": 1,
+          "trades": [
+            {
+              "wants": [
+                {
+                  "item": "minecraft:stick",
+                  "quantity": 5,
+                  "price_multiplier": 0.2
+                }
+              ],
+              "gives": [
+                {
+                  "item": "sao:col",
+                  "quantity": 3
+                }
+              ],
+              "max_uses": 9999
+            }
+          ]
+        },
+        {
+          "num_to_select": 1,
+          "trades": [
+            {
+              "wants": [
+                {
+                  "item": "minecraft:string",
+                  "quantity": 4,
+                  "price_multiplier": 0.2
+                }
+              ],
+              "gives": [
+                {
+                  "item": "sao:col",
+                  "quantity": 2
+                }
+              ],
+              "max_uses": 9999
+            }
+          ]
+        },
+        {
+          "num_to_select": 1,
+          "trades": [
+            {
+              "wants": [
+                {
+                  "item": "sao:ingot",
+                  "quantity": 3,
+                  "price_multiplier": 0.2
+                }
+              ],
+              "gives": [
+                {
+                  "item": "sao:col",
+                  "quantity": 5
+                }
+              ],
+              "max_uses": 9999
+            }
+          ]
+        },
+        {
+          "num_to_select": 1,
+          "trades": [
+            {
+              "wants": [
+                {
+                  "item": "sao:boa_fang",
+                  "quantity": 1,
+                  "price_multiplier": 0.2
+                }
+              ],
+              "gives": [
+                {
+                  "item": "sao:col",
+                  "quantity": 3
+                }
+              ],
+              "max_uses": 9999
+            }
+          ]
+        },
+        {
+          "num_to_select": 1,
+          "trades": [
+            {
+              "wants": [
+                {
+                  "item": "sao:crystal_element",
+                  "quantity": 1,
+                  "price_multiplier": 0.2
+                }
+              ],
+              "gives": [
+                {
+                  "item": "sao:col",
+                  "quantity": 10
+                }
+              ],
+              "max_uses": 9999
+            }
+          ]
+        },
+        {
+          "num_to_select": 1,
+          "trades": [
+            {
+              "wants": [
+                {
+                  "item": "minecraft:glass_bottle",
+                  "quantity": 3,
+                  "price_multiplier": 0.2
+                }
+              ],
+              "gives": [
+                {
+                  "item": "sao:col",
+                  "quantity": 2
+                }
+              ],
+              "max_uses": 9999
+            }
+          ]
+        },
+        {
+          "num_to_select": 1,
+          "trades": [
+            {
+              "wants": [
+                {
+                  "item": "sao:sharp_blue_stone",
+                  "quantity": 2,
+                  "price_multiplier": 0.2
+                }
+              ],
+              "gives": [
+                {
+                  "item": "sao:col",
+                  "quantity": 5
+                }
+              ],
+              "max_uses": 9999
+            }
+          ]
+        },
+        {
+          "num_to_select": 1,
+          "trades": [
+            {
+              "wants": [
+                {
+                  "item": "sao:book_a",
+                  "quantity": 1,
+                  "price_multiplier": 0.2
+                }
+              ],
+              "gives": [
+                {
+                  "item": "sao:col",
+                  "quantity": 5
+                }
+              ],
+              "max_uses": 9999
+            }
+          ]
+        },
+        {
+          "num_to_select": 1,
+          "trades": [
+            {
+              "wants": [
+                {
+                  "item": "sao:book_b",
+                  "quantity": 1,
+                  "price_multiplier": 0.2
+                }
+              ],
+              "gives": [
+                {
+                  "item": "sao:col",
+                  "quantity": 5
+                }
+              ],
+              "max_uses": 9999
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
